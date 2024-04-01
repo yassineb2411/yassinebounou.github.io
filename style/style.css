@@ -28,6 +28,10 @@ header{
     color: #fefefe;
 }
 
+button{
+    font-family: 'Poppins';
+}
+
 .hamburger{
     display: none;
 }
