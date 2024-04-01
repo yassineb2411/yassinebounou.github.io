@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Liens Externes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+        <!-- Liens Internes - JS -->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        
+        <!-- Liens Internes - CSS -->
+        <link rel="stylesheet" href="style/style.css">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpg" href="img/developpeur.png">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yassine BOUNOU - Projets</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Yassine BOUNOU</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.php">Qui suis-je</a>
+                    </li>
+                    <li>
+                        <a href="parcours.php">Parcours</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">Projets</a>
+                    </li>
+                    <li>
+                        <a href="veille.php">Veille</a>
+                    </li>
+                    <li>
+                        <a href="experiences.php">Expériences</a>
+                    </li>
+                    <li>
+                        <a href="contact.php">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="proj-intro">
+        <span class="material-symbols-outlined">tactic</span>
+            <p>J'ai pu durant ces deux dernières années accomplir plusieurs <b>projets</b>, que ce soit 
+                seul ou en groupe, ce qui a accru mes capacités en développement et plus généralement en informatique,
+                j'ai aussi appris à être curieux et rigoureux.
+            </p>
+        </div>
+
+        <hr class="first-hr">
+
+        <p class="titre-proj">Projets Scolaires</p>
+
+        <div class="proj-container">
+                <div class="projets-nb1">
+                    <img class="img-projet1" src="img/Logo-gsb.png" alt="">
+                    <p class="projet-desc"><strong>GSB Winforms</strong></p>
+                            <div class="lien-projet-scolaire" id="open">
+                                <p class="lien-proj">En savoir plus</p>
+                                <img class="arrow-ios" src="img/arrow.png" alt="">
+                            </div>   
+                </div>
+
+                <div class="projets-nb1">
+                    <img class="img-projet1" src="img/Logo-gsb.png" alt="">
+                    <p class="projet-desc"><strong>GSB Laravel</strong></p>
+                            <div class="lien-projet-scolaire" id="open2">
+                                <p class="lien-proj">En savoir plus</p>
+                                <img class="arrow-ios" src="img/arrow.png" alt="">
+                            </div>  
+                </div>
+
+                <div class="projets-nb1">
+                    <img class="img-projet1" src="img/asian_food.png" alt="">
+                    <p class="projet-desc"><strong>Asian Food</strong></p>
+                            <div class="lien-projet-scolaire" id="open3">
+                                <p class="lien-proj">En savoir plus</p>
+                                <img class="arrow-ios" src="img/arrow.png" alt="">
+                            </div>  
+                </div>
+
+                <div class="modal-container" id="modal_container">
+                    <div class="modal">
+                        <h1>GSB Winforms</h1>
+                        <div class="img-proj">
+                            <img src="img/winforms-img1.png" alt="">
+                            <img src="img/winforms-img2.png" alt="">
+                        </div>
+                        <p>J'ai réalisé à l'aide de mon camarade SALLAMI Redwane, de mes connaissances et de la documentation donnée par mes 
+                            professeurs d'AP, une mission en C# Winforms avec une base de données SQL Server. 
+                            Cette mission consistait en la gestion des médecins et des rapports dans un laboratoire nommé Galaxy Swiss Bourdin.
+                            J'ai réellement pu développer mes capacités à raisonner de manière informatique afin de
+                            trouver des solutions techniques à des problèmes donnés.
+                            (Projet fait en deuxième année)
+                        </p>
+                        <button class="btn1">
+                            <a class="repo-git" href="https://github.com/yassineb2411/projet_gsb_winforms" target="_blank">Dépôt Github</a> 
+                        </button>
+                        <button class="btn1">
+                            <a href="fichiers/Documentation_Gsbwinforms.pdf" class="repo-git">
+                                Documentation
+                            </a>
+                        </button>
+                        <div class="btn-close">
+                            <button id="close" class="btn-fermer">
+                                Fermer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-container2" id="modal_container2">
+                    <div class="modal">
+                        <h1>GSB Laravel</h1>
+                        <div class="img-proj">
+                            <img src="img/gsblaravel1.png" alt="">
+                        </div>
+                        <p>GSB Laravel est un projet réalisé en duo (que j'ai pour ma part réalisé avec LIANA Kamil) en PHP avec le Framework Laravel et une base de données MySQL.
+                            Cette mission consistait en la gestion des frais d'un laboratoire nommé aussi Galaxy Swiss Bourdin. 
+                            Tout comme GSB Winforms, tout au long du développement de cette application j'ai travaillé mes aptitudes
+                            à me documenter seul, à être autonome et à être patient. (Projet réalisé aussi en deuxième année)
+                        </p>
+                        <button class="btn1">
+                            <a class="repo-git" href="" target="_blank">Dépôt Github</a> 
+                        </button>
+                        <button class="btn1"><a class="repo-git" href="fichiers/Documentation_Gsblaravel.pdf">Documentation</a></button>
+                        <div class="btn-close"><button id="close2" class="btn-fermer">Fermer</button></div>
+                    </div>
+                </div>
+
+                <div class="modal-container3" id="modal_container3">
+                    <div class="modal">
+                        <h1>Asian Food</h1>
+                        <div class="img-proj">
+                            <img src="img/projet_frais.png" alt="">
+                        </div>
+                        <p>Asian food est un projet réalisé en première année en duo.
+                            J'ai eu l'occasion d'apprendre pour la première fois à travailler en groupe 
+                            (mode de travail très courant dans le monde de l'informatique) ce qui m'a permis 
+                            donc de découvrir à quoi cela s'apparentait. Concernant le projet, il s'agit 
+                            d'une application web extranet pour un restaurant nommé Asian Food permettant de gérer 
+                            les stocks de produits (légumes, fruits, viandes, etc...) et faire des commandes.
+                            J'ai réalisé ce projet avec les langages suivants : PHP, JavaScript, HTML, CSS.
+                        </p>
+                        <button id="close3" class="btn-fermer">
+                            Fermer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <hr class="first-hr">
+
+        <p class="titre-proj">Projets Professionnels</p>
+
+        <div class="proj-container2">
+            <div class="projets-nb1">
+                <img class="img-projet1" src="img/lateliers_logo.jpg" alt="">
+                <p class="projet-desc"><strong>Application professionnelle</strong></p>
+                <div class="lien-projet-scolaire" id="open4">
+                    <p class="lien-proj">En savoir plus</p>
+                    <img class="arrow-ios" src="img/arrow.png" alt="">
+                </div>   
+            </div>
+        </div>
+
+        <div class="modal-container4" id="modal_container4">
+                    <div class="modal">
+                        <h1>Application professionnelle : Lateliers</h1>
+                        <p>
+                            J'ai participé au sein de l'entreprise Lateliers, à la réalisation d'une application 
+                            en C# winforms. J'ai pu travailler sur plusieurs aspects de l'application tels que
+                            la facturation éléctronique, la gestion des sociétés, des versions de l'application, etc. 
+                            Comme j'ai pu le développer dans la section expériences, j'ai beaucoup appris de ce 
+                            stage et j'ai pu évoluer en terme de compétences. Retrouvez toute la documentation nécéssaire
+                            afin d'en savoir plus concernant tout ce que j'ai pu réaliser durant ce stage !
+                        </p>
+                        <button id="close4" class="btn-fermer">
+                            Fermer
+                        </button>
+                        <button class="btn1"><a class="repo-git" href="fichiers/Documentation_lateliers_stage.pdf">Documentation</a></button>
+                    </div>
+                </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.php">Qui suis-je</a></li>
+                            <li><a href="#">Parcours</a></li>
+                            <li><a href="#">Expériences</a></li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a href="#">Veille</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Coordonnées</h4>
+                        <ul>
+                            <li><a href="mailto:bounou.yassine.sio@gmail.com">bounou.yassine.sio</a></li>
+                            <li><a href="#">0783858643</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Socials</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/yassineb2411" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yassine-bounou-etudiant/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">© Yassine Bounou Tout droits réservés</p>
+        </footer>
+    </body>
+</html>
+
+<script>
+    const open = document.getElementById('open');
+    const modal_container = document.getElementById('modal_container');
+    const modal_container2 = document.getElementById('modal_container2');
+    const modal_container3 = document.getElementById('modal_container3');
+    const modal_container4 = document.getElementById('modal_container4');
+
+    const close = document.getElementById('close');
+    const body = document.body;
+
+    open.addEventListener('click', () => {
+        modal_container.classList.add('show');
+        body.classList.add('modal-open');
+    });
+    
+    close.addEventListener('click', () => {
+        modal_container.classList.remove('show');
+        body.classList.remove('modal-open');
+    });
+
+    open2.addEventListener('click', () => {
+        modal_container2.classList.add('show');
+        body.classList.add('modal-open2');
+    });
+    
+    close2.addEventListener('click', () => {
+        modal_container2.classList.remove('show');
+        body.classList.remove('modal-open2');
+    });
+
+    open3.addEventListener('click', () => {
+        modal_container3.classList.add('show');
+        body.classList.add('modal-open3');
+    });
+    
+    close3.addEventListener('click', () => {
+        modal_container3.classList.remove('show');
+        body.classList.remove('modal-open3');
+    });
+
+    open4.addEventListener('click', () => {
+        modal_container4.classList.add('show');
+        body.classList.add('modal-open4');
+    });
+    
+    close4.addEventListener('click', () => {
+        modal_container4.classList.remove('show');
+        body.classList.remove('modal-open4');
+    });
+</script>
+
+<style>
+    .btn-fermer{
+        border-radius: 5px;
+        color: #fff;
+        border: 0;
+        padding: 10px 25px;
+        background-color: red;
+        cursor: pointer;
+    }
+
+    .btn-close{
+        margin-top: 10px;
+    }
+
+    .proj-container2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+    .img-proj{
+        margin-top: 30px;
+    }
+
+    .modal img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .proj-intro p{
+        font-size: 18px;
+    }
+
+    .repo-git{
+        color: #fff;
+    }
+
+    .btn1{
+        border-radius: 5px;
+        color: #fff;
+        border: 0;
+        padding: 10px 25px;
+        background-color: #935af6;
+        cursor: pointer;
+    }
+
+    .lien-projet-scolaire{
+        cursor: pointer;
+    }
+
+    .modal-container.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-container2.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-container3.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-container4.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-open {
+        overflow: hidden;
+    }
+
+    .modal-open2 {
+        overflow: hidden;
+    }
+
+    .modal-open3 {
+        overflow: hidden;
+    }
+
+    .modal-open4 {
+        overflow: hidden;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .modal-container{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal-container2{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal-container3{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal-container4{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal{
+        background-color: #fff;
+        width: 600px;
+        max-width: 100%;
+        padding: 30px 50px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .modal p{
+        font-size: 14px;
+        opacity: 0.7;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .lien-projet-scolaire{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        width: 200px;
+        transition: all 0.3s ease;
+    }
+
+    .lien-projet-scolaire:hover{
+        padding-left: 8px;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }   
+
+    .arrow-ios{
+        margin-top: 3.5px;
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .lien-proj{
+        color: black;
+    }
+
+    .titre-projet-scol{
+        text-align: center;
+        padding-top: 50px;
+        font-size: 30px;
+    }
+
+    .projet-scol1{
+        text-align: center;
+        padding: 50px 10% 50px;
+    }
+
+    .projet-scolaire2{
+        height:360px;
+        background-color: #fff;
+    }
+
+    .projet-scolaire{
+        height: 360px;
+        background-color: #ECECEC;
+    }
+
+    .titre-proj{
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .projet-desc{
+        margin-top: 20px;
+    }
+
+    .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: black;
+    }
+
+    .img-projet1{
+        width: 230px;
+        border-radius: 3px;
+        height: 180px;
+    }
+
+    .proj-intro {
+        padding: 100px 30%;
+        text-align: center;
+    }
+
+    .first-hr{
+        margin-top: 40px;
+        margin-bottom: 100px;
+        width: 75%;
+        margin-left: 12.5%;
+        border: 0.25px solid;
+        color: #E4E9E9;
+    }
+
+    .proj-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 125px;
+        }
+
+    .projets-nb1{
+        margin: 0px 35px 0px 35px;
+        background-color: #ECECEC;
+        width: 288px;
+        color: black;
+        padding: 1.8rem;
+        border-radius: 5px;
+        
+    }
+    
+    /* .projets-nb2{
+        margin: 70px 35px 0px 35px;
+        background-color: #ECECEC;
+        color: black;
+        width: 25%;
+        border-radius: 5px;
+        padding: 1.25rem;
+    } */
+</style>
