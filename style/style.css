@@ -4,11 +4,11 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
     width: 100%;
-    font-family: "Poppins", sans-serif;
 }
 
 header{
