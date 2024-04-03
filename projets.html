@@ -65,31 +65,44 @@
         <p class="titre-proj">Projets Scolaires</p>
 
         <div class="proj-container">
-                <div class="projets-nb1">
-                    <img class="img-projet1" src="img/Logo-gsb.png" alt="">
-                    <p class="projet-desc"><strong>GSB Winforms</strong></p>
-                            <div class="lien-projet-scolaire" id="open">
-                                <p class="lien-proj">En savoir plus</p>
-                                <img class="arrow-ios" src="img/arrow.png" alt="">
-                            </div>   
+                <div class="proj-subcontainer">
+                    <div class="projets-nb1">
+                        <img class="img-projet1" src="img/Logo-gsb.png" alt="">
+                        <p class="projet-desc"><strong>GSB Winforms</strong></p>
+                                <div class="lien-projet-scolaire" id="open">
+                                    <p class="lien-proj">En savoir plus</p>
+                                    <img class="arrow-ios" src="img/arrow.png" alt="">
+                                </div>   
+                    </div>
+    
+                    <div class="projets-nb1">
+                        <img class="img-projet1" src="img/Logo-gsb.png" alt="">
+                        <p class="projet-desc"><strong>GSB Laravel</strong></p>
+                                <div class="lien-projet-scolaire" id="open2">
+                                    <p class="lien-proj">En savoir plus</p>
+                                    <img class="arrow-ios" src="img/arrow.png" alt="">
+                                </div>  
+                    </div>
+    
+                    <div class="projets-nb1">
+                        <img class="img-projet1" src="img/asian_food.png" alt="">
+                        <p class="projet-desc"><strong>Asian Food</strong></p>
+                                <div class="lien-projet-scolaire" id="open3">
+                                    <p class="lien-proj">En savoir plus</p>
+                                    <img class="arrow-ios" src="img/arrow.png" alt="">
+                                </div>  
+                    </div>
                 </div>
 
-                <div class="projets-nb1">
-                    <img class="img-projet1" src="img/Logo-gsb.png" alt="">
-                    <p class="projet-desc"><strong>GSB Laravel</strong></p>
-                            <div class="lien-projet-scolaire" id="open2">
-                                <p class="lien-proj">En savoir plus</p>
-                                <img class="arrow-ios" src="img/arrow.png" alt="">
-                            </div>  
-                </div>
-
-                <div class="projets-nb1">
-                    <img class="img-projet1" src="img/asian_food.png" alt="">
-                    <p class="projet-desc"><strong>Asian Food</strong></p>
-                            <div class="lien-projet-scolaire" id="open3">
-                                <p class="lien-proj">En savoir plus</p>
-                                <img class="arrow-ios" src="img/arrow.png" alt="">
-                            </div>  
+                <div class="proj-subcontainer">   
+                    <div class="projets-nb1">
+                        <img class="img-projet1" src="img/Logo-gsb.png" alt="">
+                        <p class="projet-desc"><strong>GSB</strong></p>
+                                <div class="lien-projet-scolaire" id="open5">
+                                    <p class="lien-proj">En savoir plus</p>
+                                    <img class="arrow-ios" src="img/arrow.png" alt="">
+                                </div>  
+                    </div>
                 </div>
 
                 <div class="modal-container" id="modal_container">
@@ -156,6 +169,24 @@
                             J'ai réalisé ce projet avec les langages suivants : PHP, JavaScript, HTML, CSS.
                         </p>
                         <button id="close3" class="btn-fermer">
+                            Fermer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-container5" id="modal_container5">
+                <div class="modal">
+                    <h1>GSB Winforms</h1>
+                    <div class="img-proj">
+                        <img src="img/gsbfrais.png" alt="">
+                    </div>
+                    <p>J'ai réalisé cette mission en PHP et MySQL en début d'année avec l'aide de la documentation et de mes 
+                        connaissances. Ce projet a été réalisé avec un design pattern MVC (Modele-Vue-Contrôleur) en début
+                        d'année 2023.
+                    </p>
+                    <div class="btn-close">
+                        <button id="close5" class="btn-fermer">
                             Fermer
                         </button>
                     </div>
@@ -236,6 +267,7 @@
     const modal_container2 = document.getElementById('modal_container2');
     const modal_container3 = document.getElementById('modal_container3');
     const modal_container4 = document.getElementById('modal_container4');
+    const modal_container5 = document.getElementById('modal_container5');
 
     const close = document.getElementById('close');
     const body = document.body;
@@ -279,9 +311,26 @@
         modal_container4.classList.remove('show');
         body.classList.remove('modal-open4');
     });
+
+    open5.addEventListener('click', () => {
+        modal_container5.classList.add('show');
+        body.classList.add('modal-open5');
+    });
+    
+    close5.addEventListener('click', () => {
+        modal_container5.classList.remove('show');
+        body.classList.remove('modal-open5');
+    });
 </script>
 
 <style>
+    .proj-subcontainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
     .btn-fermer{
         border-radius: 5px;
         color: #fff;
@@ -351,6 +400,11 @@
         pointer-events: auto;
     }
 
+    .modal-container5.show{
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     .modal-open {
         overflow: hidden;
     }
@@ -364,6 +418,10 @@
     }
 
     .modal-open4 {
+        overflow: hidden;
+    }
+
+    .modal-open5 {
         overflow: hidden;
     }
 
@@ -414,6 +472,20 @@
     }
 
     .modal-container4{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal-container5{
         background-color: rgba(0, 0, 0, 0.3);
         position: fixed;
         display: flex;
@@ -522,7 +594,6 @@
     }
 
     .first-hr{
-        margin-top: 40px;
         margin-bottom: 100px;
         width: 75%;
         margin-left: 12.5%;
@@ -537,7 +608,7 @@
         width: 75%;
         margin: auto;
         justify-content: center;
-        margin-bottom: 125px;
+        margin-bottom: 50px;
         }
 
     .projets-nb1{
